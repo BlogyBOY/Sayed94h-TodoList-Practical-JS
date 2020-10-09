@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Individual Project TodoList</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>To do list by following Practical JS</h1>
+			<h1>Todo List</h1>
+		</header>
+
+		<hr />
+		<div>
+			<button onclick="handler.toggleTodo()">Check-uncheck All</button>
+			<br /><br />
+			<button onclick="handler.addItem()">Add Items</button>
+			<input id="userInput" type="text" placeholder="What To do?" />
+		</div>
+		<hr />
+		<div>
+			<button onclick="handler.changeTodo()">Change Todo</button>
+			<input id="item-position" type="text" placeholder="Which item?" />
+			<input id="item-text" type="text" placeholder="Todo Text" />
+		</div>
+		<hr />
+
+		<hr />
+		<div>
+			<button onclick="handler.toggleCompleted()">Check as Completed</button>
+			<input id="toggle-position" type="number" placeholder="Which item? " />
+		</div>
+
+		<ol id="todoList" start="0"></ol>
+
+		<hr />
+		<br />
+		<hr />
+		<br />
+		<hr />
+		<br />
+		<hr />
+		<br />
+		<script src="./script.js"></script>
+	</body>
+</html>
